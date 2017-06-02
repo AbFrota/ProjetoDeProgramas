@@ -6,11 +6,7 @@ public class Mago extends Personagem implements ComportamentoMagico{
 	public Mago (String nome){
 		super (nome);
 	};
-	@Override
-	public void invisibilidade() {
-		// TODO Auto-generated method stub
-		System.out.println("Agora voce ve "+getNome()+", agora nao ve mais.");
-	}
+	
 
 	@Override
 	public void ultrarapidez() {
@@ -22,7 +18,7 @@ public class Mago extends Personagem implements ComportamentoMagico{
 	@Override
 	public void andar() {
 		// TODO Auto-generated method stub
-		System.out.println("Ahhh, "+getNome()+" n„o deveria andar.");
+		System.out.println("Ahhh, "+getNome()+" n√£o deveria andar.");
 	}
 
 	@Override
@@ -36,5 +32,11 @@ public class Mago extends Personagem implements ComportamentoMagico{
 		// TODO Auto-generated method stub
 		System.out.println("O Implacavel Mago, "+getNome()+" vai guardar seu anel.");
 	}
+
+    @Override
+    public void invisiblidade() {
+        // TODO Auto-generated method stub
+		System.out.println("Agora voce ve "+getNome()+", agora nao ve mais.");
+    }
 
 }
